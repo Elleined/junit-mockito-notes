@@ -26,12 +26,10 @@ Notes for Java JUnit testing framework
 
 # JUnit Annotations
 `@Test`: Mark the method or class to be JUnit test class.  
-
-`@Before`: Execute before the specified test case runs.  
+ 
 `@BeforeEach`: Execute before every test cases runs.  
 `@BeforeAll`: Execute before any of the test case runs.  
-
-`@After`: Execute after the specified test case runs.  
+ 
 `@AfterEach`: Execute after every test case runs.  
 `@AfterAll`: Execute after all the test case runs.  
 
