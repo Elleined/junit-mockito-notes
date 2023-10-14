@@ -9,7 +9,7 @@ Notes for Java JUnit testing framework
 - Developer will write the unit test cases.
 
 ### Why do we need Unit Testing
-- To prevent and detect bugs immediately during the development phase so that we can product quality and production ready code.
+- To prevent and detect bugs immediately during the development phase so that we can produce quality and production ready code.
 
 ### Purpose of Unit Testing
 - To validate that each unit of the software code performs as expected.
