@@ -43,15 +43,14 @@ Notes for Java JUnit testing framework
 - Static methods from jupyter API to validate the expected result and actual result of the test case.
 
 ### Assestions methods
-```
-assertEquals(T expected, U actual)
-assertNotEquals(T expected, U actual)
+`assertEquals(T expected, U actual)`: Will pass if expected and actual are equals.  
+  
+`assertNotEquals(T expected, U actual)`: Will pass if expected and actual are not equals.   
 
-assertTrue(boolean condition)
-assertFalse(boolean condition)
+`assertTrue(boolean condition)`: Will pass if condition returns true.   
+`assertFalse(boolean condition)`: Will passs if conditiom returns false.  
 
-assertNull(T object)
-assertNotNull(T object)
+`assertNull(T object)`: Will pass if object is null.    
+`assertNotNull(T object)`: Will pass if object is not null.  
 
-assertArrayEquals(T expected, U actual)
-```
+`assertArrayEquals(T expected, U actual)`: Will pass if expected and actual are equals.
