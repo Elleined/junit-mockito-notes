@@ -20,3 +20,25 @@ Notes for Java JUnit testing framework
 # What is Unit
 -  Unit can be anything software code that needed to be tested like method, function, component, class, logic, or object.
 
+# What is JUnit
+- Open source, lightweight, easy to use, and powerful unit testing framework for java applications.
+- Developed by Kent Beck and Erich Gamma back in 1997.
+  
+# [JUnit Annotations](https://github.com/Elleined/all-spring-boot-annotations)
+
+# What is Assertions
+- Static methods from jupyter API to validate the expected result and actual result of the test case.
+
+### Assestions methods
+```
+assertEquals(T expected, U actual)
+assertNotEquals(T expected, U actual)
+
+assertTrue(boolean condition)
+assertFalse(boolean condition)
+
+assertNull(T object)
+assertNotNull(T object)
+
+assertArrayEquals(T expected, U actual)
+```
