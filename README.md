@@ -25,21 +25,19 @@ Notes for Java JUnit testing framework
 - Developed by Kent Beck and Erich Gamma back in 1997.
 
 # JUnit Annotations
-`@Test`: Mark the method or class to be JUnit test class.
+`@Test`: Mark the method or class to be JUnit test class.  
 
-`@Before`: Execute before the specified test case runs.
-`@BeforeEach`: Execute before every test cases runs.
-`@BeforeAll`: Execute before any of the test case runs.
+`@Before`: Execute before the specified test case runs.  
+`@BeforeEach`: Execute before every test cases runs.  
+`@BeforeAll`: Execute before any of the test case runs.  
 
-`@After`: Execute after the specified test case runs.
-`@AfterEach`: Execute after every test case runs.
-`@AfterAll`: Execute after all the test case runs.
+`@After`: Execute after the specified test case runs.  
+`@AfterEach`: Execute after every test case runs.  
+`@AfterAll`: Execute after all the test case runs.  
 
-`@Disabled`: Skips method or class test case.
-`@Tag`: Used to have a group/ pack of test case.
-`@DisplayName`: Rename test case name in console.
-
-# [JUnit Annotations](https://github.com/Elleined/all-spring-boot-annotations)
+`@Disabled`: Skips method or class test case.  
+`@Tag`: Used to have a group/ pack of test case.  
+`@DisplayName`: Rename test case name in console.  
 
 # What is Assertions
 - Static methods from jupyter API to validate the expected result and actual result of the test case.
