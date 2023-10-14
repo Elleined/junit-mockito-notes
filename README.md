@@ -61,4 +61,5 @@ Notes for Java JUnit testing framework
 
 `assertArrayEquals(T expected, U actual)`: Will pass if expected and actual are equals.
 
-`assertThrows(Class<T> expectedException, Executable executable, `: Will pass if supplied executable throws the expectedException.
+`assertThrows(Class<T> expectedException, Executable executable, `: Will pass if execution
+of supplied executable throws the expectedException.
