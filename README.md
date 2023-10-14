@@ -44,10 +44,11 @@ Notes for Java JUnit testing framework
 `@DisplayName`: Rename test case name in console.  
 
 # What is Assertions
-- Static methods from jupyter API to validate the expected result and actual result of the test case.
+- Static methods from jupiter API to validate the expected result and actual result of the test case.
 
 ### Assestions methods
 - These methods are available in org.junit.jupiter.Assertions.class
+  
 `assertEquals(T expected, U actual)`: Will pass if expected and actual are equals.  
   
 `assertNotEquals(T expected, U actual)`: Will pass if expected and actual are not equals.   
