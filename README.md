@@ -26,6 +26,12 @@ Notes for Java JUnit testing framework
 
 # JUnit Annotations
 `@Test`: Mark the method or class to be JUnit test class.  
+
+`@ParameterizedTest`: Used to have parameter in test method.  
+  - `@ValueSource`
+  - `MethodSource`
+  - `CsvSource`
+  - `CsvFileSource`
  
 `@BeforeEach`: Execute before every test cases runs.  
 `@BeforeAll`: Execute before any of the test case runs.  
@@ -41,6 +47,7 @@ Notes for Java JUnit testing framework
 - Static methods from jupyter API to validate the expected result and actual result of the test case.
 
 ### Assestions methods
+- These methods are available in org.junit.jupiter.Assertions.class
 `assertEquals(T expected, U actual)`: Will pass if expected and actual are equals.  
   
 `assertNotEquals(T expected, U actual)`: Will pass if expected and actual are not equals.   
