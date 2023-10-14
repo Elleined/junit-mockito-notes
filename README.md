@@ -68,11 +68,13 @@ of supplied executable throws the expectedException.
 `assertInstance(Class<T> expectedInstance, T object)`: Will pass if supplied object is instance of expectedInstance.
 
 # What is Mocking
-- Used to achieve isolation/ dependent in unit testing.
-- Used to create a mock/ dummy object that will be used instead of real object.
+- Process of creating mock/dummy/substitute object that will be used instead of real object.
+
+### Purpose of Mocking
+- Used to achieve isolation/ dependent unit testing and focus only in the target unit test and not on external dependecies behavior.
 
 # When to use Mocking
-- If you have a component, method, function, class, logic, or object that is dependent in other components, method, function, class, logic, or object of the program.
+- If you have a component, method, function, class, logic, or object has external depedencies.
 
 # Why use mocking
 - You will use mock/ dummy object for that so you can test individual component, method, function, class, logic, or object without interacting or calling the real object.
