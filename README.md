@@ -59,3 +59,5 @@ Notes for Java JUnit testing framework
 `assertNotNull(T object)`: Will pass if object is not null.  
 
 `assertArrayEquals(T expected, U actual)`: Will pass if expected and actual are equals.
+
+`assertThrows(Class<T> expectedException, Executable executable, `: Will pass if supplied executable throws the expectedException.
