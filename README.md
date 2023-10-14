@@ -66,3 +66,13 @@ of supplied executable throws the expectedException.
 `assertNotThrows(Class<T> expectedException, Executable executable)`: Will pass if execution of supplied executable will not throws expectedException.
 
 `assertInstance(Class<T> expectedInstance, T object)`: Will pass if supplied object is instance of expectedInstance.
+
+# What is Mocking
+- Used to achieve isolation/ dependent in unit testing.
+- Used to create a mock/ dummy object that will be used instead of real object.
+
+# When to use Mocking
+- If you have a component, method, function, class, logic, or object that is dependent in other components, method, function, class, logic, or object of the program.
+
+# Why use mocking
+- You will use mock/ dummy object for that so you can test individual component, method, function, class, logic, or object without interacting or calling the real object.
