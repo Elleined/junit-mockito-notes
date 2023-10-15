@@ -69,9 +69,11 @@ of supplied executable throws the expectedException.
 
 # What is Mocking
 - Process of creating mock/dummy/substitute object that will be used instead of real object.
-
+- Proxy of actual object.
+  
 ### Purpose of Mocking
 - Used to achieve isolation/ dependent unit testing and focus only in the target unit test and not on external dependecies behavior.
+- No need of real database connection, properties file read, and file server read.
 
 ### Benefits of Mockito
 - No need to write your own mock object.
