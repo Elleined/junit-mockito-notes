@@ -1,5 +1,5 @@
-# junit-notes
-Notes for Java JUnit testing framework
+# junit-mockito-notes
+Notes for Java JUnit testing framework and Mockito
 
 # What is Unit Testing
 - Unit testing is a software testing where individual units or components of a software are tested.
@@ -78,3 +78,7 @@ of supplied executable throws the expectedException.
 
 # Why use mocking
 - You will use mock/ dummy object for that so you can test individual component, method, function, class, logic, or object without interacting or calling the real object.
+
+
+# Helpful links
+[Junit and Mocking by Ashok IT](https://m.youtube.com/watch?v=MEFoGR07qgw&t=11126s&pp=ygUOQXNob2sgaXQganVuaXQ%3D)
