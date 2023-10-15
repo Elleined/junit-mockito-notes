@@ -73,6 +73,13 @@ of supplied executable throws the expectedException.
 ### Purpose of Mocking
 - Used to achieve isolation/ dependent unit testing and focus only in the target unit test and not on external dependecies behavior.
 
+### Benefits of Mockito
+- No need to write your own mock object.
+- Safe refactoring because mock object are created at runtime.
+- Exception support.
+- Annotation support.
+- Method order support.
+
 # When to use Mocking
 - If you have a component, method, function, class, logic, or object has external depedencies.
 
