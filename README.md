@@ -99,11 +99,26 @@ of supplied executable throws the expectedException.
 - So, in summary, a spy retains the original class's behavior and allows you to selectively stub methods, while a mock is a complete dummy with default behaviors that you can customize using when(), and stubbing is the act of defining custom behavior for specific methods during testing. Your understanding is mostly accurate.
 
 # Mockito methods
+`mock(T mockObject)`: Used to create substitute/ mock/ dummy object of the supplied mockObject and the methods will return null/ true/ false/ 0 unless you stub the method.  
+
+`when(mockObjectMethod)`: Used to stub or defined the behavior of mockObjectMethod and will returns the thenReturn returnValue.  
+
+`thenReturn(R returnValue)`: Used to specify the return value of specified mockObjectMethod. 
+
 `doNothing()`: Used if method returns void.  
-`thenReturn(R returnValue)`: Used to specify the return value of specified mock object method.  
-`mock(T targetMockObject)`: Used to create substitute/ mock/ dummy object of the supplied tarketMockObject.  
-`when(T methodToHaveMockBehavior)`: Used in conjunction with thenReturn the supplied methodToHaveMockBehavior will returns the thenReturn returnValue.  
-`spy()`: Used for private and final methods, classes, and fields.  
+
+`spy()`: Used to create a mock object that will also have the behavior of the real object but you can stub a specific method.  
+
+`verify(T mockObject)`: Used to check if method call is really invoked or called.  
+
+`times(int expectedNumberOfTimesCalled)`: Used to check how many times that method is called.
+
+# Mockito Annotations
+-**@Mock**: is also the same as mock().
+-**@ExtendWith**: Always used together with @Mock to tell mockito to create a mock object using annotation.
+-**InjectMocks**: Always used together with @Mock to automatically injects the mocks dependencies.
 
 # Helpful links
 [Junit and Mocking by Ashok IT](https://m.youtube.com/watch?v=MEFoGR07qgw&t=11126s&pp=ygUOQXNob2sgaXQganVuaXQ%3D)
+
+[Mockito by Dinesh Viryani](https://m.youtube.com/watch?v=RfErIPo94bc&t=9283s&pp=ygUHTW9ja2l0bw%3D%3D)
