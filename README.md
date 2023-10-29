@@ -113,6 +113,8 @@ of supplied executable throws the expectedException.
 
 `times(int expectedNumberOfTimesCalled)`: Used to check how many times that method is called.
 
+`verifyNoInteractions(T targetMockObject)`: Used to verify that there are no any method is called in targetMockObject.
+
 ###### do family methods doNothing(), doThrow(), doAnswer(), and doReturn() are used when you want to define a behavior when mock object method is called that doesn`t return any values or void methods.
 
 ###### then family methods thenReturn(), thenThrow(), and thenAnswer(), are used when you want to define the return value of mock object method is called.
