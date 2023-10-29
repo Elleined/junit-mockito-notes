@@ -107,11 +107,15 @@ of supplied executable throws the expectedException.
 
 `doNothing()`: Used if method returns void.  
 
-`spy()`: Used to create a mock object that will also have the behavior of the real object but you can stub a specific method.  
+`spy(T mockObject)`: Used to create a mock object that will also have the behavior of the real object but you can stub a specific method.  
 
 `verify(T mockObject)`: Used to check if method call is really invoked or called.  
 
 `times(int expectedNumberOfTimesCalled)`: Used to check how many times that method is called.
+
+###### do family methods doNothing(), doThrow(), doAnswer(), and doReturn() are used when you want to define a behavior when mock object method is called that doesn`t return any values or void methods.
+
+###### then family methods thenReturn(), thenThrow(), and thenAnswer(), are used when you want to define the return value of mock object method is called.
 
 # Mockito Annotations
 -**@Mock**: is also the same as mock().
