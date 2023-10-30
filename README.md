@@ -117,6 +117,8 @@ of supplied executable throws the expectedException.
 
 `verifyNoMoreInteractions(T targetMockObject)`: Used to check if there no more further interactions is called im targetMockObject.
 
+`inOrder(T mockObject)`: Used to check the order of method call is correct or not.
+
 ###### do family methods doNothing(), doThrow(), doAnswer(), and doReturn() are used when you want to define a behavior when mock object method is called that doesn`t return any values or void methods.
 
 ###### then family methods thenReturn(), thenThrow(), and thenAnswer(), are used when you want to define the return value of mock object method is called.
