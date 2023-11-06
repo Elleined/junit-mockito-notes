@@ -124,9 +124,9 @@ of supplied executable throws the expectedException.
 ###### then family methods thenReturn(), thenThrow(), and thenAnswer(), are used when you want to define the return value of mock object method is called.
 
 # Mockito Annotations
--**@Mock**: is also the same as mock().
--**@ExtendWith**: Always used together with @Mock to tell mockito to create a mock object using annotation.
--**InjectMocks**: Always used together with @Mock to automatically injects the mocks dependencies.
+-**@Mock**: is also the same as mock().  
+-**@ExtendWith**: Always used together with @Mock to tell mockito to create a mock object using annotation.  
+-**InjectMocks**: Always used together with @Mock to automatically injects the mocks dependencies.  
 
 # Helpful links
 [Junit and Mocking by Ashok IT](https://m.youtube.com/watch?v=MEFoGR07qgw&t=11126s&pp=ygUOQXNob2sgaXQganVuaXQ%3D)
