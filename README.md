@@ -111,6 +111,8 @@ of supplied executable throws the expectedException.
 
 `spy(T mockObject)`: Used to create a mock object that will also have the behavior of the real object but you can stub a specific method.  
 
+`any()`: Used in replace of argument for you to call the method without the valid parameter. Usually used if parameter is not important for testing/
+
 `verify(T mockObject)`: Used to check if method call is really invoked or called.  
 
 `times(int expectedNumberOfTimesCalled)`: Used to check how many times that method is called.
