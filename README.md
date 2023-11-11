@@ -105,6 +105,8 @@ of supplied executable throws the expectedException.
 
 `thenReturn(R returnValue)`: Used to specify the return value of specified mockObjectMethod. 
 
+`thenCallRealMethod()`: Used to call the real method behavior of stubbed method.  
+
 `doNothing()`: Used if method returns void.  
 
 `spy(T mockObject)`: Used to create a mock object that will also have the behavior of the real object but you can stub a specific method.  
@@ -125,7 +127,7 @@ of supplied executable throws the expectedException.
 
 # Mockito Annotations
 -**@Mock**: is also the same as mock().  
--**@ExtendWith**: Always used together with @Mock to tell mockito to create a mock object using annotation.  
+-**@ExtendWith**: Always used together with @Mock to tell mockito to create a mock object using annotation.   
 -**InjectMocks**: Always used together with @Mock to automatically injects the mocks dependencies.  
 
 # Helpful links
