@@ -111,6 +111,8 @@ of supplied executable throws the expectedException.
 
 `doNothing()`: Used if method returns void.  
 
+`doAnswer(Invocation invocation)`: Commonly used in void methods but can also be used regardless of return type. Used when you want custom action when a specific method is called on a mock object. This is useful when you need to define behavior for a method that doesn't return a value but instead has some side effects like modifying some state or performing some action. invocation is functional interface.
+
 `spy(T mockObject)`: Used to create a mock object that will also have the behavior of the real object but you can stub a specific method.  
 
 `any()`: Used in replace of argument for you to call the method without the valid parameter. Usually used if parameter is not important for testing/
