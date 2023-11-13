@@ -59,7 +59,9 @@ Notes for Java JUnit testing framework and Mockito
 `assertNull(T object)`: Will pass if object is null.    
 `assertNotNull(T object)`: Will pass if object is not null.  
 
-`assertArrayEquals(T expected, U actual)`: Will pass if expected and actual are equals.
+`assertArrayEquals(T expected, U actual)`: Use for primitive data types.  Will pass if expected and actual are equals.
+
+`assertIterableEquals(T expected, U actual)`: Use for collections. Will pass if expected and actual are deeply equals.
 
 `assertThrows(Class<T> expectedException, Executable executable, `: Will pass if execution
 of supplied executable throws the expectedException.
