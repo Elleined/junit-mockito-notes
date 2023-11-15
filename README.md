@@ -50,7 +50,6 @@ Notes for Java JUnit testing framework and Mockito
 - These methods are available in org.junit.jupiter.Assertions.class
   
 `assertEquals(T expected, U actual)`: Will pass if expected and actual are equals.  
-  
 `assertNotEquals(T expected, U actual)`: Will pass if expected and actual are not equals.   
 
 `assertTrue(boolean condition)`: Will pass if condition returns true.   
@@ -64,7 +63,7 @@ Notes for Java JUnit testing framework and Mockito
 `assertIterableEquals(T expected, U actual)`: Use for collections. Will pass if expected and actual are deeply equals.
 
 `assertThrows(Class<T> expectedException, Executable executable, `: Will pass if execution
-of supplied executable throws the expectedException.
+of supplied executable throws the expectedException.  
 `assertNotThrows(Class<T> expectedException, Executable executable)`: Will pass if execution of supplied executable will not throws expectedException.
 
 `assertInstance(Class<T> expectedInstance, T object)`: Will pass if supplied object is instance of expectedInstance.
@@ -102,7 +101,6 @@ of supplied executable throws the expectedException.
 
 # Mockito methods
 `mock(T mockObject)`: Used to create substitute/ mock/ dummy object of the supplied mockObject and the methods will return null/ true/ false/ 0 unless you stub the method.  
-
 `when(mockObjectMethod)`: Used to stub or defined the behavior of mockObjectMethod and will returns the thenReturn returnValue.  
 
 `thenReturn(R returnValue)`: Used to specify the return value of specified mockObjectMethod. 
@@ -136,9 +134,10 @@ of supplied executable throws the expectedException.
 ###### then family methods thenReturn(), thenThrow(), and thenAnswer(), are used when you want to define the return value of mock object method is called.
 
 # Mockito Annotations
--**@Mock**: is also the same as mock().  
+-**@Mock**: is also the same as mock(). 
 -**@ExtendWith**: Always used together with @Mock to tell mockito to create a mock object using annotation.   
 -**InjectMocks**: Always used together with @Mock to automatically injects the mocks dependencies.  
+=**@MockBean**: Used in conjunction with @SpringBootTest used to replace the real object in application context with mock object.
 
 # Helpful links
 [Junit and Mocking by Ashok IT](https://m.youtube.com/watch?v=MEFoGR07qgw&t=11126s&pp=ygUOQXNob2sgaXQganVuaXQ%3D)
