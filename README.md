@@ -64,7 +64,7 @@ Notes for Java JUnit testing framework and Mockito
 
 `assertThrows(Class<T> expectedException, Executable executable, `: Will pass if execution
 of supplied executable throws the expectedException.  
-`assertNotThrows(Class<T> expectedException, Executable executable)`: Will pass if execution of supplied executable will not throws expectedException.
+`assertDoesNotThrows(Executable executable)`: Will pass if execution of supplied executable will not throw any type of exception.
 
 `assertInstance(Class<T> expectedInstance, T object)`: Will pass if supplied object is instance of expectedInstance.
 
