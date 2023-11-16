@@ -137,11 +137,30 @@ of supplied executable throws the expectedException.
 - Used in replace of argument for you to call the method without the valid parameter. Usually used if parameter is not important for testing.
 
 ### Argument Matcher methods
-`T any()`:  Any object.   
+`T any()`:  Any object. 
+
+## Specific type of argument matchers
+`anyByte()`
+`anyShort()`
+`anyInt()`
+`anyDouble()`
+`anyFloat()`
+`anyLong()`
+
+`amyBoolean`
+
+`anyChar()`
+`anyString()`
+
+`anyList()`
+`anySet()`
+`anyMap()`
+`anyIterable()` 
+
 `T any(Class<T> clazz)`: Any object of given type.  
 
-###### Note: Argument matchers should be supplief in all arguments.  
-###### Note: Strictly use only for arguments.
+###### Note: Argument matchers should be supplied in all arguments.  
+###### Note: Strictly use only for arguments and no other use case.
 
 # Mockito Annotations
 - **@Mock**: is also the same as mock().
