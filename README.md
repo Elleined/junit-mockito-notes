@@ -113,8 +113,6 @@ of supplied executable throws the expectedException.
 
 `spy(T mockObject)`: Used to create a mock object that will also have the behavior of the real object but you can stub a specific method.  
 
-`any()`: Used in replace of argument for you to call the method without the valid parameter. Usually used if parameter is not important for testing/
-
 `verify(T mockObject)`: Used to check if method call is really invoked or called.  
 
 `times(int expectedNumberOfTimesCalled)`: Used to check how many times that method is called.
@@ -135,16 +133,19 @@ of supplied executable throws the expectedException.
 
 # Mockito argument matchers
 - Used for behavior verifications without needing to supply the real arguments and also if the argument are not that important for the test to work.
+- Used in replace of argument for you to call the method without the valid parameter. Usually used if parameter is not important for testing.  
 
 ### Argument Matcher methods
-`T any()`:  Any object.  
+`T any()`:  Any object.   
 `T any(Class<T> clazz)`: Any object of given type.  
 
 # Mockito Annotations
--**@Mock**: is also the same as mock(). 
--**@ExtendWith**: Always used together with @Mock to tell mockito to create a mock object using annotation.   
--**InjectMocks**: Always used together with @Mock to automatically injects the mocks dependencies.  
-=**@MockBean**: Used in conjunction with @SpringBootTest used to replace the real object in application context with mock object.
+- **@Mock**: is also the same as mock().
+
+- **@ExtendWith**: Always used together with @Mock to tell mockito to create a mock object using annotation.   
+- **InjectMocks**: Always used together with @Mock to automatically injects the mocks dependencies.
+ 
+- **@MockBean**: Used in conjunction with @SpringBootTest used to replace the real object in application context with mock object.
 
 # Helpful links
 [Junit and Mocking by Ashok IT](https://m.youtube.com/watch?v=MEFoGR07qgw&t=11126s&pp=ygUOQXNob2sgaXQganVuaXQ%3D)
