@@ -133,6 +133,13 @@ of supplied executable throws the expectedException.
 
 ###### then family methods thenReturn(), thenThrow(), and thenAnswer(), are used when you want to define the return value of mock object method is called.
 
+# Mockito argument matchers
+- Used for behavior verifications without needing to supply the real arguments and also if the argument are not that important for the test to work.
+
+### Argument Matcher methods
+`T any()`:  Any object.  
+`T any(Class<T> clazz)`: Any object of given type.  
+
 # Mockito Annotations
 -**@Mock**: is also the same as mock(). 
 -**@ExtendWith**: Always used together with @Mock to tell mockito to create a mock object using annotation.   
