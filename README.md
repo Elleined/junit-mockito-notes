@@ -137,9 +137,11 @@ of supplied executable throws the expectedException.
 - Used in replace of argument for you to call the method without the valid parameter. Usually used if parameter is not important for testing.
 
 ### Argument Matcher methods
-`T any()`:  Any object. 
+`T eq(T t)`: Used when expected argument has an impact with method behavior since any() class should be suppplied in all argument eq() methods are the way to have both real argument and any() argument when mocking a method.  
 
-## Specific type of argument matchers
+`T any()`:  General purpose any type.
+`T any(Class<T> clazz)`: General purpose for non-primitive data types.  
+
 `anyByte()`
 `anyShort()`
 `anyInt()`
@@ -147,7 +149,7 @@ of supplied executable throws the expectedException.
 `anyFloat()`
 `anyLong()`
 
-`amyBoolean`
+`anyBoolean`
 
 `anyChar()`
 `anyString()`
@@ -157,9 +159,8 @@ of supplied executable throws the expectedException.
 `anyMap()`
 `anyIterable()` 
 
-`T any(Class<T> clazz)`: Any object of given type.  
-
 ###### Note: Argument matchers should be supplied in all arguments.  
+###### Note: Argument matchers should be supplied in all arguments. But can be use with eq() 
 ###### Note: Strictly use only for arguments and no other use case.
 
 # Mockito Annotations
