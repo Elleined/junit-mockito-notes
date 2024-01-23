@@ -90,14 +90,16 @@ of supplied executable throws the expectedException.
 - You will use mock/ dummy object for that so you can test individual component, method, function, class, logic, or object without interacting or calling the real object.
 
 # Difference between mock, stub, and spy
-- **Spy**: A spy is a Mockito feature that allows you to create a partial mock of a real object. When you spy on an object, it retains the original class's method behavior, and you can also stub specific methods if you want to change their behavior. It's a way to partially mock an object, meaning some methods are real (not stubbed), and others can be stubbed as needed. use do family methods for spy.  
+- **Spy**: A spy is a Mockito feature that allows you to create a partial mock of a real object. When you spy on an object, it retains the original class's method behavior, and you can also stub specific methods if you want to change their behavior. It's a way to partially mock an object, meaning some methods are real (not stubbed), and others can be stubbed as needed. use do() family methods for spy.  
 
 - **Mock**: Is essentially a dummy or fake implementation of a class or interface. By default, when you create a mock using Mockito, all its methods return default values based on their return types (e.g., null, 0, false). You can then use when() to specify custom behavior for specific methods.
+use then() family methods for mock.  
 
-- **Stub**: Is the process of defining how a method should behave when it's called on a mock or spy object. It's akin to overriding a method's behavior for testing purposes. use then family methods for mock.  
+
+- **Stub**: Is the process of defining how a method should behave when it's called on a mock or spy object. It's akin to overriding a method's behavior for testing purposes.
 
 ##### Summary
-- So, in summary, a spy retains the original class's behavior and allows you to selectively stub methods, while a mock is a complete dummy with default behaviors that you can customize using when(), and stubbing is the act of defining custom behavior for specific methods during testing. Your understanding is mostly accurate.
+- So, in summary, a spy retains the original class's behavior and allows you to selectively stub methods, while a mock is a complete dummy with default behaviors that you can customize using when(), and stubbing is the act of defining custom behavior for specific methods during testing.
 
 # Mockito methods
 `mock(T mockObject)`: Used to create substitute/ mock/ dummy object of the supplied mockObject and the methods will return null/ true/ false/ 0 unless you stub the method.  
