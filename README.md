@@ -139,7 +139,7 @@ use then() family methods for mock.
 - Used in replace of argument for you to call the method without the valid parameter. Usually used if parameter is not important for testing.
 
 ### Argument Matcher methods
-`T eq(T t)`: Used when expected argument has an impact with method behavior since any() class should be suppplied in all argument eq() methods are the way to have both real argument and any() argument when mocking a method.  
+`T eq(T t)`: Used to specify a value along with other argument matchers.
 
 `T any()`:  General purpose any type.
 `T any(Class<T> clazz)`: General purpose for non-primitive data types.  
@@ -162,14 +162,14 @@ use then() family methods for mock.
 `anyIterable()` 
 
 ###### Note: Argument matchers should be supplied in all arguments.  
-###### Note: Argument matchers should be supplied in all arguments. But can be use with eq() 
+###### Note: Argument matchers should be supplied in all arguments. But can be use with eq() to specify a specific value
 ###### Note: Strictly use only for arguments and no other use case.
 
 # Mockito Annotations
 - **@Mock**: is also the same as mock().
 
 - **@ExtendWith**: Always used together with @Mock to tell mockito to create a mock object using annotation.   
-- **InjectMocks**: Always used together with @Mock to automatically injects the mocks dependencies.
+- **@InjectMocks**: Always used together with @Mock to automatically injects the mocks dependencies.
  
 - **@MockBean**: Used in conjunction with @SpringBootTest used to replace the real object in application context with mock object.
 
