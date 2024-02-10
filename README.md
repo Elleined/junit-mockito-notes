@@ -129,9 +129,9 @@ use then() family methods for mock.
 
 `atMost(int maximumNumberOfInvocations)`: Used to verify that method is call with maximum or at most maximumNumberOfInvocations.  
 
-###### do family methods doNothing(), doThrow(), doAnswer(), and doReturn() are used when you want to define a behavior when mock object method is called that doesn`t return any values or void methods also used for spy objects.
+# When to use do family methods like doNothing(), doThrow(), doAnswer(), and doReturn() are used when you want to define the behavior of void methods and spied mock objects.
 
-###### then family methods thenReturn(), thenThrow(), and thenAnswer(), are used when you want to define the return value of mock object method is called also used for mock objects.
+# When to use then family methods like thenReturn(), thenThrow(), and thenAnswer(), are used when you want to define the return value of mock object method.
 
 # Mockito argument matchers
 - Used for behavior verifications without needing to supply the real arguments.
