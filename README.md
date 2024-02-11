@@ -173,6 +173,43 @@ use then() family methods for mock.
  
 - **@MockBean**: Used in conjunction with @SpringBootTest used to replace the real object in application context with mock object.
 
+# IntelliJ junit 5 test class and method template
+- Go to Setting > Editor > Code Style > File and Code Templates > Code Tab > JUnit 5 Test Class > Paste this code
+```
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+#parse("File Header.java")
+@ExtendWith(MockitoExtension.class)
+class ${NAME} {
+  ${BODY}
+}
+```
+
+- Go to Setting > Editor > Code Style > File and Code Templates > Code Tab > JUnit 5 Test Method > Paste this code
+```
+@org.junit.jupiter.api.Test
+void ${NAME}() {
+  ${BODY}
+  // Expected Value
+  
+  // Mock data 
+  
+  // Set up method
+  
+  // Stubbing methods
+  
+  // Calling the method
+  
+  // Behavior Verifications
+  
+  // Assertions
+}
+```
+
 # Helpful links
 [Junit and Mocking by Ashok IT](https://m.youtube.com/watch?v=MEFoGR07qgw&t=11126s&pp=ygUOQXNob2sgaXQganVuaXQ%3D)
 
