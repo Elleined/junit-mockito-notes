@@ -210,6 +210,14 @@ void ${NAME}() {
 }
 ```
 
+# Testing in chronological order
+1. Repository
+2. Model
+3. Mapper
+4. Service
+5. Populator
+6. AfterStartUp class
+
 # Helpful links
 [Junit and Mocking by Ashok IT](https://m.youtube.com/watch?v=MEFoGR07qgw&t=11126s&pp=ygUOQXNob2sgaXQganVuaXQ%3D)
 
