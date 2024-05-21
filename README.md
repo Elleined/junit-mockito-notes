@@ -222,6 +222,7 @@ void ${NAME}() {
 6. AfterStartUp class
 
 # MockMvcTest (Controller Testing)
+[For More Comprehensive Tutorial](https://reflectoring.io/spring-boot-web-controller-test/)
 - Is used to test the controller layer of your API.
 
 ## Sample call with path variable, request body, and request parameter.
@@ -241,7 +242,8 @@ void whenValidInput_thenReturns200() throws Exception {
 ### Take Note
 - @MockBean is used for dependecies instead of @Mock unlike in service layer testing.
 - Always @Autowired the MockMvc object.
-- 
+- ObjectMapper is used for request bodies.
+
 # Helpful links
 [Junit and Mocking by Ashok IT](https://m.youtube.com/watch?v=MEFoGR07qgw&t=11126s&pp=ygUOQXNob2sgaXQganVuaXQ%3D)
 
