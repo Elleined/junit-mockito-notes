@@ -221,6 +221,27 @@ void ${NAME}() {
 5. Populator
 6. AfterStartUp class
 
+# MockMvcTest (Controller Testing)
+- Is used to test the controller layer of your API.
+
+## Sample call with path variable, request body, and request parameter.
+```
+@Test
+void whenValidInput_thenReturns200() throws Exception {
+  UserResource user = new UserResource("Zaphod", "zaphod@galaxy.net");
+  
+   mockMvc.perform(post("/forums/{forumId}/register", 42L)
+        .contentType("application/json")
+        .param("sendWelcomeMail", "true")
+        .content(objectMapper.writeValueAsString(user)))
+        .andExpect(status().isOk());
+}
+```
+
+### Take Note
+- @MockBean is used for dependecies instead of @Mock unlike in service layer testing.
+- Always @Autowired the MockMvc object.
+- 
 # Helpful links
 [Junit and Mocking by Ashok IT](https://m.youtube.com/watch?v=MEFoGR07qgw&t=11126s&pp=ygUOQXNob2sgaXQganVuaXQ%3D)
 
