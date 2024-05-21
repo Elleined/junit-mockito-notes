@@ -223,9 +223,18 @@ void ${NAME}() {
 
 # MockMvcTest (Controller Testing)
 [For More Comprehensive Tutorial](https://reflectoring.io/spring-boot-web-controller-test/)
+[Handling @RequestPart](https://stackoverflow.com/questions/21800726/using-spring-mvc-test-to-unit-test-multipart-post-request)
 - Is used to test the controller layer of your API.
 
-## Methods
+## MockMvcRequestBuilders
+- `get()`: Handling get request 
+- `post()`: Handling post request
+- `put()`: Handling put request
+- `patch()`: Handling patch request
+- `delete()`: Handling delete request
+- `multipart()`: Handling multipart request, requests that has @RequestPart
+
+## MockMvcRequestBuilders Methods
 - `param`: Specify the request parameter.
 - `content`: Specify the json payload.
 - `contentType`: Specify the application/json.
