@@ -225,6 +225,16 @@ void ${NAME}() {
 [For More Comprehensive Tutorial](https://reflectoring.io/spring-boot-web-controller-test/)
 - Is used to test the controller layer of your API.
 
+## Methods
+- `param`: Specify the request parameter.
+- `content`: Specify the json payload.
+- `contentType`: Specify the application/json.
+###### The path variable can be declared inside the MockMvcRequestBuilders methods
+```
+// Sample
+mockMvc.perform(get("/{fooId}", 1))
+```
+
 ## Sample call with path variable, request body, and request parameter.
 ```
 @Test
