@@ -179,6 +179,9 @@ use then() family methods for mock.
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.junit.jupiter.MockitoExtension;
 
@@ -192,7 +195,6 @@ class ${NAME} {
 - Go to Setting > Editor > Code Style > File and Code Templates > Code Tab > JUnit 5 Test Method > Paste this code
 ```
 @org.junit.jupiter.api.Test
-@org.junit.jupiter.api.DisplayName("")
 void ${NAME}() {
   ${BODY}
   // Pre defined values
@@ -210,7 +212,7 @@ void ${NAME}() {
   // Behavior Verifications
   
   // Assertions
-}
+}  
 ```
 
 # Testing in chronological order
