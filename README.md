@@ -219,7 +219,8 @@ void ${NAME}() {
 3. Mapper
 4. Service
 5. Populator
-6. AfterStartUp class
+6. Scheduler
+7. AfterStartUp class
 
 # MockMvcTest (Controller Testing)
 [For More Comprehensive Tutorial](https://reflectoring.io/spring-boot-web-controller-test/)
