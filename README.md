@@ -214,6 +214,7 @@ void ${NAME}() {
 ```
 
 # Testing in chronological order
+
 1. Repository
 2. Model
 3. Mapper
@@ -221,6 +222,9 @@ void ${NAME}() {
 5. Populator
 6. Scheduler
 7. AfterStartUp class
+
+# Before running any JUnit Test make sure that you edit the  configuration template for JUnit
+Run/ Debug Configurations > Edit Configurations > Edit Configuration Templates > JUnit > Now set the VM Options for your program to run properly.
 
 # MockMvcTest (Controller Testing)
 [For More Comprehensive Tutorial](https://reflectoring.io/spring-boot-web-controller-test/)
