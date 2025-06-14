@@ -195,7 +195,7 @@ class ${NAME} {
 - Go to Setting > Editor > Code Style > File and Code Templates > Code Tab > JUnit 5 Test Method > Paste this code
 ```
 @org.junit.jupiter.api.Test
-void ${NAME}() {
+void ${NAME}_HappyPath() {
   ${BODY}
   // Pre defined values
   
