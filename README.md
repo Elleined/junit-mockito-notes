@@ -211,8 +211,15 @@ void ${NAME}_HappyPath() {
   // Assertions
 }  
 ```
+# Controller Layer Testing
 
-## MockMvcRequestBuilders
+## MockMvc
+- `perform()`:
+- `andExpect()`:
+- `andDo()`:
+- `andReturn()`:
+
+## MockMvcRequestBuilders (this is used inside the perform() and use for request building)
 - `get()`: Handling get request 
 - `post()`: Handling post request
 - `put()`: Handling put request
@@ -220,15 +227,20 @@ void ${NAME}_HappyPath() {
 - `delete()`: Handling delete request
 - `multipart()`: Handling multipart request, requests that has @RequestPart
 
-## MockMvcRequestBuilders Methods
+### MockMvcRequestBuilders Methods (used after the perform())
 - `param`: Specify the request parameter.
 - `content`: Specify the json payload.
-- `contentType`: Specify the application/json.
-###### The path variable can be declared inside the MockMvcRequestBuilders methods
-```
-// Sample
-mockMvc.perform(get("/{fooId}", 1))
-```
+- `file`: Specify the multipartfile.
+- `part`: Specify the other part just like param.
+- `header`: Specify the header.
+- `cookie`: Specify the cookie
+
+## MockMvcResultMatchers (this is used inside the andExpect() and use for response assertions)
+- `status()`:
+- `content()`:
+- `header()`:
+- `jsonPath()`:
+- `cookie()`:
 
 ## Sample call with path variable, request body, and request parameter.
 ```
@@ -243,11 +255,6 @@ void whenValidInput_thenReturns200() throws Exception {
         .andExpect(status().isOk());
 }
 ```
-
-### Take Note
-- @MockBean is used for dependecies instead of @Mock unlike in service layer testing.
-- Always @Autowired the MockMvc object.
-- ObjectMapper is used for request bodies.
 
 # Helpful links
 [Junit and Mocking by Ashok IT](https://m.youtube.com/watch?v=MEFoGR07qgw&t=11126s&pp=ygUOQXNob2sgaXQganVuaXQ%3D)
