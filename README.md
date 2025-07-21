@@ -95,7 +95,6 @@ of supplied executable throws the expectedException.
 - **Mock**: Is essentially a dummy or fake implementation of a class or interface. By default, when you create a mock using Mockito, all its methods return default values based on their return types (e.g., null, 0, false). You can then use when() to specify custom behavior for specific methods.
 use then() family methods for mock.  
 
-
 - **Stub**: Is the process of defining how a method should behave when it's called on a mock or spy object. It's akin to overriding a method's behavior for testing purposes.
 
 ##### Summary
@@ -166,11 +165,9 @@ use then() family methods for mock.
 ###### Note: Strictly use only for arguments and no other use case.
 
 # Mockito Annotations
-- **@Mock**: is also the same as mock().
-
-- **@ExtendWith**: Always used together with @Mock to tell mockito to create a mock object using annotation.   
+- **@MockitoBean**: used in mocking controller layer dependencies
+- **Mock**: Use in mocking service layer dependencies
 - **@InjectMocks**: Always used together with @Mock to automatically injects the mocks dependencies.
- 
 - **@MockBean**: Used in conjunction with @SpringBootTest used to replace the real object in application context with mock object.
 
 # IntelliJ junit 5 test class and method template
@@ -214,25 +211,6 @@ void ${NAME}_HappyPath() {
   // Assertions
 }  
 ```
-
-# Testing in chronological order
-
-1. Repository
-2. Model
-3. Mapper
-4. Service
-5. Populator
-6. Scheduler
-7. AfterStartUp class
-
-# Before running any JUnit Test make sure that you edit the  configuration template for JUnit
-Run/ Debug Configurations > Edit Configurations > Edit Configuration Templates > JUnit > Now set the VM Options for your program to run properly.
-
-# MockMvcTest (Controller Testing)
-[For More Comprehensive Tutorial](https://reflectoring.io/spring-boot-web-controller-test/)
-
-[Handling @RequestPart](https://stackoverflow.com/questions/21800726/using-spring-mvc-test-to-unit-test-multipart-post-request)
-- Is used to test the controller layer of your API.
 
 ## MockMvcRequestBuilders
 - `get()`: Handling get request 
