@@ -173,6 +173,7 @@ use then() family methods for mock.
 # IntelliJ junit 5 test class and method template
 - Go to Setting > Editor > Code Style > File and Code Templates > Code Tab > JUnit 5 Test Class > Paste this code
 ```
+import static org.junit.jupiter.api.Assumptions.*;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
@@ -255,6 +256,14 @@ void whenValidInput_thenReturns200() throws Exception {
         .andExpect(status().isOk());
 }
 ```
+
+# Assumptions
+
+# Testing Main Classesimport static org.junit.jupiter.api.Assertions.*;
+1. import static org.mockito.Mockito.*;
+2. import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+3. import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+4. import static org.junit.jupiter.api.Assumptions;
 
 # Helpful links
 [Junit and Mocking by Ashok IT](https://m.youtube.com/watch?v=MEFoGR07qgw&t=11126s&pp=ygUOQXNob2sgaXQganVuaXQ%3D)
