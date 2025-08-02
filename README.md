@@ -258,6 +258,12 @@ void whenValidInput_thenReturns200() throws Exception {
 ```
 
 # Assumptions
+- Assumptions in JUnit are used to conditionally execute or skip tests based on certain criteria
+
+## Methods
+1. AssumeTrue: Test runs ONLY if the condition is true
+2. AssumeFalse: Test runs ONLY if the condition is false
+
 
 # Testing Main Classesimport static org.junit.jupiter.api.Assertions.*;
 1. import static org.mockito.Mockito.*;
