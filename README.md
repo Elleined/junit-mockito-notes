@@ -265,11 +265,25 @@ void whenValidInput_thenReturns200() throws Exception {
 2. AssumeFalse: Test runs ONLY if the condition is false
 
 
-# Testing Main Classesimport static org.junit.jupiter.api.Assertions.*;
-1. import static org.mockito.Mockito.*;
-2. import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-3. import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
-4. import static org.junit.jupiter.api.Assumptions;
+# Imports for Junit 5 Testing
+```
+// --- Mockito ---
+import static org.mockito.ArgumentMatchers.*;
+import static org.mockito.BDDMockito.*;       // For given(), willReturn(), etc.
+import static org.mockito.Mockito.*;
+
+// --- Spring MockMvc ---
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+
+// --- JUnit 5 Assertions ---
+import static org.junit.jupiter.api.Assertions.*;    // assertEquals, assertTrue, assertThrows, etc.
+import static org.junit.jupiter.api.Assumptions.*;   // assumeTrue, assumeFalse, etc.
+
+// --- Hamcrest (for jsonPath matchers) ---
+import static org.hamcrest.Matchers.*;
+```
 
 # Helpful links
 [Junit and Mocking by Ashok IT](https://m.youtube.com/watch?v=MEFoGR07qgw&t=11126s&pp=ygUOQXNob2sgaXQganVuaXQ%3D)
