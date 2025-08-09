@@ -263,33 +263,73 @@ void whenValidInput_thenReturns200() throws Exception {
 }
 ```
 
-# Assumptions
-- Assumptions in JUnit are used to conditionally execute or skip tests based on certain criteria
+# Hamcrest
+This is a categorized list of commonly used **Hamcrest matchers** from `org.hamcrest.Matchers`.
 
-## Methods
-1. AssumeTrue: Test runs ONLY if the condition is true
-2. AssumeFalse: Test runs ONLY if the condition is false
+## 1. Core Matchers
+### Equality and Identity
+- `is(value)` – exact equality (syntactic sugar)
+- `equalTo(value)` – exact equality
+- `not(value)` – negates a matcher
+- `sameInstance(value)` – same object reference
+- `nullValue()` – is `null`
+- `notNullValue()` – not `null`
 
+### Logical
+- `allOf(m1, m2, ...)` – all must match
+- `anyOf(m1, m2, ...)` – at least one must match
 
-# Imports for Junit 5 Testing
-```
-// --- Mockito ---
-import static org.mockito.ArgumentMatchers.*;
-import static org.mockito.BDDMockito.*;       // For given(), willReturn(), etc.
-import static org.mockito.Mockito.*;
+## 2. String Matchers
+- `containsString(substring)`
+- `startsWith(prefix)`
+- `endsWith(suffix)`
+- `equalToIgnoringCase(str)`
+- `equalToIgnoringWhiteSpace(str)`
+- `matchesPattern(regex)` *(Java 8+)*
 
-// --- Spring MockMvc ---
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+## 3. Numeric Matchers
+- `greaterThan(n)`
+- `greaterThanOrEqualTo(n)`
+- `lessThan(n)`
+- `lessThanOrEqualTo(n)`
+- `closeTo(value, error)` – for floating-point comparisons
 
-// --- JUnit 5 Assertions ---
-import static org.junit.jupiter.api.Assertions.*;    // assertEquals, assertTrue, assertThrows, etc.
-import static org.junit.jupiter.api.Assumptions.*;   // assumeTrue, assumeFalse, etc.
+## 4. Collection Matchers
+- `hasItem(item)`
+- `hasItems(item1, item2, ...)`
+- `contains(item1, item2, ...)` – exact order
+- `containsInAnyOrder(item1, item2, ...)`
+- `empty()` – empty collection
+- `not(empty())` – not empty
+- `everyItem(matcher)` – every element matches
 
-// --- Hamcrest (for jsonPath matchers) ---
-import static org.hamcrest.Matchers.*;
-```
+## 5. Array Matchers
+- `arrayContaining(item1, item2, ...)` – exact order
+- `arrayContainingInAnyOrder(item1, item2, ...)`
+- `arrayWithSize(n)`
+- `emptyArray()`
+
+## 6. Map Matchers
+- `hasKey(key)`
+- `hasValue(value)`
+- `hasEntry(key, value)`
+
+## 7. Object Property Matchers
+- `hasProperty("propertyName")`
+- `hasProperty("propertyName", matcher)`
+
+## 8. Type and Instance Matchers
+- `instanceOf(Class.class)`
+- `isA(Class.class)` – shortcut for `instanceOf`
+
+## 9. Optional / Miscellaneous
+- `describedAs(description, matcher)` – custom description
+- `anything()` – matches anything
+- `typeCompatibleWith(Class.class)`
+
+## 10. Combinators
+- `both(m1).and(m2)` – both must match
+- `either(m1).or(m2)` – either can match
 
 # Helpful links
 [Junit and Mocking by Ashok IT](https://m.youtube.com/watch?v=MEFoGR07qgw&t=11126s&pp=ygUOQXNob2sgaXQganVuaXQ%3D)
