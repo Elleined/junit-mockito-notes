@@ -173,12 +173,18 @@ use then() family methods for mock.
 # IntelliJ junit 5 test class and method template
 - Go to Setting > Editor > Code Style > File and Code Templates > Code Tab > JUnit 5 Test Class > Paste this code
 ```
-import static org.junit.jupiter.api.Assumptions.*;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.*;
+import static org.mockito.BDDMockito.*;
 import static org.mockito.Mockito.*;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assumptions.*;
+
+import static org.hamcrest.Matchers.*;
 
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.junit.jupiter.MockitoExtension;
